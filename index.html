@@ -1,8 +1,9 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Birthday</title>
 
   <!-- FONT -->
@@ -20,33 +21,44 @@
   <div class="light-beam"></div>
   <div class="dust" id="dustContainer"></div>
 
-
   <!-- PAGE 1 -->
   <section class="page active page-enter" id="page1">
     <p class="main-subtitle">A BIRTHDAY LETTER</p>
     <h1 class="main-title">Happy Birthday</h1>
-    <div class="divider"><div class="divider-diamond"></div></div>
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
     <button class="btn" onclick="nextPage(2)">OPEN</button>
   </section>
-
 
   <!-- PAGE 2 -->
   <section class="page" id="page2">
     <div class="monogram">F</div>
-    <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar"></div>
+    </div>
     <p class="loading-text">loading your surprise…</p>
   </section>
-
 
   <!-- PAGE 3 -->
   <section class="page" id="page3">
     <p class="invite-label">YOU ARE CORDIALLY INVITED</p>
-    <div class="divider"><div class="divider-diamond"></div></div>
-    <h1 class="surprise-title">A Little Surprise<span>Made With Love</span></h1>
-    <div class="divider"><div class="divider-diamond"></div></div>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <h1 class="surprise-title">
+      A Little Surprise
+      <span>Made With Love</span>
+    </h1>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
     <button class="btn" onclick="startCountdown()">CONTINUE</button>
   </section>
-
 
   <!-- PAGE 4 -->
   <section class="page" id="page4">
@@ -56,53 +68,75 @@
     </div>
   </section>
 
-
   <!-- PAGE 5 -->
   <section class="page" id="page5">
     <p class="gallery-label">A MOMENT IN TIME</p>
+
     <div class="grid-gallery">
 
       <!-- FOTO 1 -->
-      <!-- Ganti "foto bareng 1.jpeg" dengan nama file foto kamu -->
-      <div class="photo" onclick="openMessage('foto bareng 1.jpeg', 'Selamat ulang tahun yaa 💖 Semoga semua hal baik selalu datang ke hidup kamu> Selamat ulang tahun, Fitri! 🎂✨ Di hari spesialmu ini, aku cuma mau bilang kalau aku bersyukur banget takdir mempertemukan kita. Makasih udah selalu ada buat dengerin curhatan aku, nemenin ketawa, dan berbagi banyak hal. Punya temen kayak kamu itu salah satu hal terbaik di hidup aku. Semoga kamu selalu bahagia, sehat, dan semua impianmu tercapai. Love you Fit 🤍😝.')">
-        <img src="foto bareng 1.jpeg" alt="Photo 1">
+      <div class="photo"
+        onclick="openMessage(
+          'img/foto bareng 1.jpeg',
+          'Selamat ulang tahun yaa 💖 Semoga semua hal baik selalu datang ke hidup kamu. Selamat ulang tahun, Fitri! 🎂✨ Di hari spesialmu ini, aku cuma mau bilang kalau aku bersyukur banget takdir mempertemukan kita. Makasih udah selalu ada buat dengerin curhatan aku, nemenin ketawa, dan berbagi banyak hal. Punya temen kayak kamu itu salah satu hal terbaik di hidup aku. Semoga kamu selalu bahagia, sehat, dan semua impianmu tercapai. Love you Fit 🤍😝.'
+        )">
+
+        <img src="img/foto bareng 1.jpeg" alt="Photo 1">
         <span class="photo-icon">✦</span>
       </div>
 
       <!-- FOTO 2 -->
-      <div class="photo" onclick="openMessage('foto bareng 2.jpeg', 'I know this is your favorite pic of course is favorite because i yang fotoin 😏, soon foto nya langsung sebelahan ya jangan ada halangan palek batagor🤭 i wish u sama dia jadian🫶🏻 biar cegil nya kebayarr🤟🏻.')">
-        <img src="foto bareng 2.jpeg" alt="Photo 2">
+      <div class="photo"
+        onclick="openMessage(
+          'img/foto bareng 2.jpeg',
+          'I know this is your favorite pic 😏 Soon foto nya langsung sebelahan ya jangan ada halangan palek batagor 🤭 I wish u sama dia jadian 🫶🏻 biar cegil nya kebayar 🤟🏻.'
+        )">
+
+        <img src="img/foto bareng 2.jpeg" alt="Photo 2">
         <span class="photo-icon">✦</span>
       </div>
 
       <!-- FOTO 3 -->
-      <div class="photo" onclick="openMessage('foto bareng 3.jpeg', 'Kaloo akuu suka nya inii karena foto nya pakai hp ku, semoga kamu bahagiaa selalu ya sayang calon kakak ipar mu disini selalu ada buat kamu🤍.')">
-        <img src="foto bareng 3.jpeg" alt="Photo 3">
+      <div class="photo"
+        onclick="openMessage(
+          'img/foto bareng 3.jpeg',
+          'Kalau aku sukanya ini karena foto nya pakai hp ku 📸 Semoga kamu bahagia selalu ya sayang, calon kakak ipar mu disini selalu ada buat kamu 🤍.'
+        )">
+
+        <img src="img/foto bareng 3.jpeg" alt="Photo 3">
         <span class="photo-icon">✦</span>
       </div>
 
       <!-- FOTO 4 -->
-      <div class="photo" onclick="openMessage('foto bareng 4.jpeg', 'Next time aku yang traktir kamu yaa🙂‍↕️🙂‍↕️🙂‍↕️.')">
-        <img src="foto bareng 4.jpeg" alt="Photo 4">
+      <div class="photo"
+        onclick="openMessage(
+          'img/foto bareng 4.jpeg',
+          'Next time aku yang traktir kamu yaa 🙂‍↕️🙂‍↕️🙂‍↕️'
+        )">
+
+        <img src="img/foto bareng 4.jpeg" alt="Photo 4">
         <span class="photo-icon">✦</span>
       </div>
 
     </div>
   </section>
 
-
   <!-- POPUP -->
   <div class="popup" id="popup">
     <div class="popup-card">
+
       <img id="popup-img" alt="">
+
       <div class="popup-body">
         <p class="popup-for">For You 💌</p>
+
         <p class="popup-msg" id="popup-message"></p>
+
         <button class="btn" onclick="closePopup()">CLOSE</button>
       </div>
+
     </div>
   </div>
-
 
   <!-- MUSIC -->
   <audio autoplay loop>
@@ -114,3 +148,4 @@
 
 </body>
 </html>
+```
